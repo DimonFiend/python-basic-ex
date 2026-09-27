@@ -8,4 +8,4 @@ END_NUM = 31
 
 if __name__ == "__main__":
     for num in range(START_NUM, END_NUM + 1, 2):
-        print(num)
+        print(num, end=", ")
