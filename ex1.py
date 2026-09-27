@@ -1,0 +1,10 @@
+'''
+    Ex1 - Write a for loop that prints the numbers from 12 to 24.
+'''
+
+START_NUM = 12
+END_NUM = 24
+
+if __name__ == "__main__":
+    for num in range(START_NUM, END_NUM + 1):
+        print(num)
