@@ -2,6 +2,7 @@
     Ex1 - Write a for loop that prints the numbers from 12 to 24.
 '''
 
+#Constants for easier code changes
 START_NUM = 12
 END_NUM = 24
 
