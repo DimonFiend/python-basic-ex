@@ -15,24 +15,24 @@
 
 '''
 
-def print_student_data(student: dict) -> None:
+def print_student_data(student: dict[str, any]) -> None:
     for key, value in student.items():
         print(f"{key}: {value}")
     print()
 
-def add_hobby(student: dict, hobby: str) -> None:
+def add_hobby(student: dict[str, any], hobby: str) -> None:
     if hobby not in student.setdefault('hobbies', []):
         student['hobbies'].append(hobby)
 
-def delete_hobby(student: dict, hobby: str) -> None:
+def delete_hobby(student: dict[str, any], hobby: str) -> None:
     if hobby in student.get('hobbies', []):
         student['hobbies'].remove(hobby)
 
-def add_family_name(student: dict, family_name: str) -> None:
+def add_family_name(student: dict[str, any], family_name: str) -> None:
     student['family_name'] = family_name
 
 if __name__ == "__main__":
-    student = {'name': 'John', 'age': 20, 'hobbies': ['reading', 'games', 'coding']}
+    student : dict[str, any] = {'name': 'John', 'age': 20, 'hobbies': ['reading', 'games', 'coding']}
     
     print_student_data(student)
     add_hobby(student, 'swimming')

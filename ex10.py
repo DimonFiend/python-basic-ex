@@ -9,7 +9,7 @@
 '''
 
 def zero_count(matrix: list[list[int]]) -> int:
-    zero_counter = 0
+    zero_counter : int = 0
 
     for row in matrix:
         for col in row:
@@ -18,7 +18,7 @@ def zero_count(matrix: list[list[int]]) -> int:
     return zero_counter
 
 if __name__ == "__main__":
-    matrix = [[0, 1, 1],
-              [0, 1, 0],
-              [1, 0, 0]]
+    matrix : list[list[int]] = [[0, 1, 1],
+                               [0, 1, 0],
+                               [1, 0, 0]]
     print(zero_count(matrix))

@@ -7,8 +7,8 @@
 '''
 
 #Constants for easier code changes
-START_NUM = 1
-END_NUM = 45
+START_NUM : int = 1
+END_NUM : int = 45
 
 if __name__ == "__main__":
     for num in range(START_NUM, END_NUM + 1):

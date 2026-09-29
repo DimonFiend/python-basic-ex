@@ -7,14 +7,14 @@
                 [true, 3, “be”, false, “cannot”, true, 9, “what”, 43]
 '''
 
-def reverse_array(arr: list) -> list:
-    reversed_arr = []
-    last_index = len(arr) - 1
+def reverse_array(arr: list[object]) -> list[object]:
+    reversed_arr : list[object] = []
+    last_index  : int = len(arr) - 1
     for i in range(last_index, -1, -1):
         reversed_arr.append(arr[i])
 
     return reversed_arr
 
 if __name__ == "__main__":
-    arr = [43, "what", 9, True, "cannot", False, "be", 3, True]
+    arr : list[object] = [43, "what", 9, True, "cannot", False, "be", 3, True]
     print(reverse_array(arr))

@@ -8,7 +8,7 @@
 
 #Sums the nums in the given array without sum function, if list is empty returns None
 def sum_array(arr : list[int]) -> int | None:
-    total = 0
+    total : int = 0
 
     if not arr:
         return None
@@ -18,7 +18,7 @@ def sum_array(arr : list[int]) -> int | None:
     return total
 
 if __name__ == "__main__":
-    arr = [1,13,22,123,49,34,5,24,57,45] #example list
+    arr : list[int] = [1,13,22,123,49,34,5,24,57,45] #example list
     print(sum_array(arr))
 
     # empty case

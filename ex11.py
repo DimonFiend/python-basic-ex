@@ -7,8 +7,8 @@
 '''
 
 def find_dup(arr: list[int]) -> list[int]:
-    seen = set()
-    duplicates = set()
+    seen : set[int] = set()
+    duplicates : set[int] = set()
 
     for num in arr:
         if num in seen:
@@ -19,5 +19,5 @@ def find_dup(arr: list[int]) -> list[int]:
     return list(duplicates)
 
 if __name__ == "__main__":
-    arr = [4,2,34,4,1,12,1,4]
+    arr : list[int] = [4,2,34,4,1,12,1,4]
     print(find_dup(arr))

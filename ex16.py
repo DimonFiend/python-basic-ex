@@ -3,7 +3,7 @@
             The counter should start with the value 900000 before the first iteration.
 '''
 if __name__ == "__main__":
-    counter = 900000
+    counter : float = 900000
     while counter > 50:
         print(counter, end=" ")
         counter /= 2

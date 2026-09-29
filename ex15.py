@@ -4,7 +4,7 @@
 '''
 
 if __name__ == "__main__":
-    counter = 1
+    counter  : int = 1
     while counter < 100:
         print(counter, end=" ")
         counter *= 2

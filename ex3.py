@@ -3,8 +3,8 @@
 '''
 
 #Constants for easier code changes
-START_NUM = 10
-END_NUM = -20
+START_NUM : int = 10
+END_NUM : int = -20
 
 if __name__ == "__main__":
     for num in range(START_NUM, END_NUM - 1, -2):

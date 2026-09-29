@@ -18,23 +18,23 @@
 
 '''
 
-def delete_if_exists_prop(arr: list[dict], prop: str) -> None:
+def delete_if_exists_prop(arr: list[dict[str, any]], prop: str) -> None:
     for obj in arr:
         obj.pop(prop, None) #Not raises an error if key not found and not requiring an if statement
 
-def print_all_props(arr: list[dict]) -> None:
+def print_all_props(arr: list[dict[str, any]]) -> None:
     for i, obj in enumerate(arr):
         print(f"Object {i + 1}:")
         for key, value in obj.items():
             print(f"{key} : {value}", end=", ")
         print()
 
-def sort_by_age_desc(arr: list[dict]) -> list[dict]:
+def sort_by_age_desc(arr: list[dict[str, any]]) -> list[dict[str, any]]:
     #x.get returns the value or an default -1 if value doesn't exist which will place it last in the array
     return sorted(arr, key=lambda x: x.get("age", -1), reverse=True) 
 
 if __name__ == "__main__":
-    students = [
+    students : list[dict[str, any]] = [
         {"id": 1, "first name": "John", "last name": "Doe", "age": 20, "country": "USA", "city": "New York"},
         {"id": 2, "first name": "Jane", "last name": "Smith", "age": 22, "country": "Canada", "city": "Toronto"},
         {"id": 3, "first name": "Alice", "last name": "Johnson", "age": 19, "country": "UK", "city": "London"},

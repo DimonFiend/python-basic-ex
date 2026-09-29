@@ -11,15 +11,15 @@
                                            False (for second_str)
 '''
 def is_palindrome(word: str) -> bool:
-    str_length = len(word)
+    str_length : int = len(word)
     for i in range(str_length // 2):
         if word[i] != word[str_length - i - 1]:
             return False
     return True
 
 if __name__ == "__main__":
-    first_str = "racecar"
-    second_str = "Java"
+    first_str : str = "racecar"
+    second_str : str = "Java"
     print(is_palindrome(first_str))
     print(is_palindrome(second_str))
 
